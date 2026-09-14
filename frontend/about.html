@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Samiksha S</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">Portfolio</a>
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- About & Education -->
+    <main>
+
+        <section class="section">
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    GET TO KNOW ME
+                </p>
+
+                <h1>About</h1>
+                <p class="page-description">
+                    A little about my background, interests, and journey as a software developer.
+                </p>
+
+
+                <!-- Tabs -->
+                <div class="career-tabs">
+
+                    <button class="career-tab"
+                            onclick="showAboutSection('about-me', this)">
+                        About Me
+                    </button>
+
+                    <button class="career-tab"
+                            onclick="showAboutSection('about-education', this)">
+                        Education
+                    </button>
+
+                </div>
+
+
+                <!-- ================= ABOUT ME ================= -->
+
+                <div id="about-me" class="career-content active">
+
+                    <div class="about-content">
+
+                        <p>
+                            I'm Samiksha S, a final-year M.Tech Computer Science
+                            and Engineering student with hands-on experience in
+                            web application development and software engineering.
+                        </p>
+
+                        <p>
+                            I enjoy building practical applications that solve
+                            real-world problems, from web applications and REST
+                            APIs to intelligent systems and database-driven
+                            solutions.
+                        </p>
+
+                        <p>
+                            During my internship at RIMES, I worked on
+                            Angular-based authentication modules, a GeoJSON
+                            upload and export tool, asynchronous task processing
+                            using Flask and Redis Queue, and manual and
+                            automation testing.
+                        </p>
+
+                        <p>
+                            I'm currently expanding my full-stack development
+                            skills with Java, Spring Boot, REST APIs and
+                            PostgreSQL while building projects that combine
+                            clean design with reliable backend functionality.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= EDUCATION ================= -->
+
+                <div id="about-education" class="career-content">
+
+                    <div class="education-container">
+
+                        <!-- M.Tech -->
+
+                        <div class="education-card">
+
+                            <h2>
+                                Integrated M.Tech in Computer Science and Engineering
+                            </h2>
+
+                            <h3>
+                                Sri Ramakrishna Engineering College
+                            </h3>
+
+                            <p>
+                                Coimbatore, Tamil Nadu
+                            </p>
+
+                            <span>
+                                2022 – 2027
+                            </span>
+
+                        </div>
+
+
+                        <!-- Higher Secondary -->
+
+                        <div class="education-card">
+
+                            <h2>
+                                Higher Secondary Certificate
+                            </h2>
+
+                            <h3>
+                                Vidyaa Vikas Higher Secondary School
+                            </h3>
+
+                            <p>
+                                Tiruchengode, Tamil Nadu
+                            </p>
+
+                            <span>
+                                2021 – 2022
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Samiksha S. All rights reserved.
+        </p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+    <script>
+
+        function showAboutSection(sectionName, button) {
+
+            const sections = document.querySelectorAll(".career-content");
+
+            sections.forEach(function(section) {
+                section.classList.remove("active");
+            });
+
+
+            const buttons = document.querySelectorAll(".career-tab");
+
+            buttons.forEach(function(btn) {
+                btn.classList.remove("active");
+            });
+
+
+            document.getElementById(sectionName).classList.add("active");
+
+            button.classList.add("active");
+        }
+
+    </script>
+
+</body>
+
+</html>
